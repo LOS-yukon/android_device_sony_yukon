@@ -25,6 +25,12 @@ PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
     $(SONY_ROOT)/system/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
+# QMI
+PRODUCT_COPY_FILES += \
+    $(SONY_ROOT)/system/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
+    $(SONY_ROOT)/system/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    $(SONY_ROOT)/system/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml
+
 # Qualcom WiFi
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
