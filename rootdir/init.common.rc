@@ -336,10 +336,10 @@ service qseecomd /system/vendor/bin/qseecomd
     writepid /dev/cpuset/system-background/tasks
 
 # Offline charger
-service charger /sbin/healthd -c
+service charger /charger
     class charger
-    critical
-    #seclabel u:r:healthd:s0
+    group log
+    seclabel u:r:charger:s0
     writepid /dev/cpuset/system-background/tasks
 
 # OSS time
