@@ -107,6 +107,9 @@ BOARD_NFC_CHIPSET := pn547
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
+# Set seccomp policy for media server
+BOARD_SECCOMP_POLICY += device/sony/yukon/seccomp
+
 # Enable dex-preoptimization to speed up first boot sequence
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
