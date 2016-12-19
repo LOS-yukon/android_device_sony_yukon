@@ -168,6 +168,10 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     libqomx_core
 
+# Snap
+PRODUCT_PACKAGES += \
+    SnapdragonCamera
+
 # OSS
 PRODUCT_PACKAGES += \
     timekeep \
