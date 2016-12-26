@@ -18,6 +18,11 @@ SOMC_PLATFORM := yukon
 
 SONY_ROOT:= device/sony/yukon/rootdir
 
+# Common init
+PRODUCT_COPY_FILES += \
+    $(SONY_ROOT)/init.common.rc:root/init.common.rc \
+    $(SONY_ROOT)/init.common.usb.rc:root/init.common.usb.rc
+
 # Media
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
