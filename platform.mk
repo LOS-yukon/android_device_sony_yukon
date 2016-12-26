@@ -83,22 +83,107 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.primary.msm8226
+    audio.primary.msm8226 \
+    audio.a2dp.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudio-resampler
+
+# For audio.primary
+PRODUCT_PACKAGES += \
+    libtinyalsa \
+    libtinycompress \
+    libaudioroute \
+    tinymix
+
+# Audio effects
+PRODUCT_PACKAGES += \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libqcomvoiceprocessingdescriptors \
+    libqcompostprocbundle
 
 # GFX
 PRODUCT_PACKAGES += \
     copybit.msm8226 \
     gralloc.msm8226 \
     hwcomposer.msm8226 \
-    memtrack.msm8226
+    memtrack.msm8226 \
+    libhdmi \
+    libqdutils \
+    libqdMetaData
+
+# OMX
+PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
+    libstagefrighthw \
+    libOmxCore \
+    libmm-omxcore \
+    libOmxVdec \
+    libOmxVdecHevc \
+    libOmxVenc
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8226
+    gps.msm8226 \
+    libloc_api_v02 \
+    libloc_core \
+    libloc_eng \
+    libgps.utils
+
+# WLAN
+PRODUCT_PACKAGES += \
+    p2p_supplicant.conf \
+    hostapd \
+    libwpa_client \
+    wpa_supplicant \
+    wpa_supplicant.conf
 
 # CAMERA
 PRODUCT_PACKAGES += \
-    camera.msm8226
+    camera.msm8226 \
+    libmmcamera_interface \
+    libmmjpeg_interface \
+    libmm-qcamera \
+    libqomx_core
+
+# OSS
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep \
+    thermanager \
+    macaddrsetup
+
+# QCOM OSS
+PRODUCT_PACKAGES += \
+   librmnetctl
+
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
+# AOSP Packages
+PRODUCT_PACKAGES += \
+    Launcher3
+
+PRODUCT_PACKAGES += \
+    libion \
+    libxml2
+
+PRODUCT_PACKAGES += \
+    libemoji
+
+# RIL
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full
+
+# ExtendedSettings
+PRODUCT_PACKAGES += \
+    ExtendedSettings
+
+# For android_filesystem_config.h
+PRODUCT_PACKAGES += \
+    fs_config_files
 
 # Telephony Packages (AOSP)
 PRODUCT_PACKAGES += \
