@@ -40,6 +40,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
 
+# Yukon etc
+PRODUCT_COPY_FILES += \
+    $(SONY_ROOT)/system/etc/gps.conf:system/etc/gps.conf \
+    $(SONY_ROOT)/system/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
+    $(SONY_ROOT)/system/etc/sec_config:system/etc/sec_config \
+    $(SONY_ROOT)/system/etc/sensors/sensors_settings:system/etc/sensors/sensors_settings
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl:system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl \
