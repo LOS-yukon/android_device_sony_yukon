@@ -119,6 +119,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += device/sony/yukon/overlay
+
 # System Props
 TARGET_SYSTEM_PROP += device/sony/yukon/system.prop
 
