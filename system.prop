@@ -85,3 +85,48 @@ debug.qualcomm.sns.libsensor1=0
 
 # sdcardFS
 ro.sys.sdcardfs=true
+
+# Bluetooth
+ro.qualcomm.bt.hci_transport=smd
+qcom.bluetooth.soc=smd
+
+# RILD
+rild.libpath=/vendor/lib/libril-qc-qmi-1.so
+ril.subscription.types=NV,RUIM
+
+# system prop for opengles version
+# 196608 is decimal for 0x30000 to
+# report major/minor versions as 3
+ro.opengles.version=196608
+
+# aDSP sensors
+## max rate
+ro.qti.sensors.max_accel_rate=false
+ro.qti.sensors.max_gyro_rate=false
+ro.qti.sensors.max_mag_rate=false
+ro.qti.sensors.max_geomag_rotv=50
+
+## sensor type
+ro.qti.sdk.sensors.gestures=false
+ro.qti.sensors.pedometer=false
+ro.qti.sensors.step_detector=false
+ro.qti.sensors.step_counter=false
+ro.qti.sensors.pam=false
+ro.qti.sensors.scrn_ortn=false
+ro.qti.sensors.smd=true
+ro.qti.sensors.game_rv=false
+ro.qti.sensors.georv=false
+ro.qti.sensors.cmc=false
+ro.qti.sensors.bte=false
+ro.qti.sensors.fns=false
+ro.qti.sensors.qmd=false
+ro.qti.sensors.amd=false
+ro.qti.sensors.rmd=false
+ro.qti.sensors.vmd=false
+ro.qti.sensors.gtap=false
+ro.qti.sensors.tap=false
+ro.qti.sensors.facing=false
+ro.qti.sensors.tilt=false
+ro.qti.sensors.tilt_detector=false
+ro.qti.sensors.dpc=false
+ro.qti.sensors.wu=false
