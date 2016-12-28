@@ -130,3 +130,6 @@ ro.qti.sensors.tilt=false
 ro.qti.sensors.tilt_detector=false
 ro.qti.sensors.dpc=false
 ro.qti.sensors.wu=false
+
+# Performance
+ro.vendor.extension_library=/system/vendor/lib/libqti-perfd-client.so

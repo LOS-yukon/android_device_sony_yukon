@@ -282,6 +282,13 @@ service ril-daemon2 /system/bin/rild -c 2
     group radio cache inet misc audio log
 
 # QCOM prop
+service mpdecision /system/bin/mpdecision --avg_comp
+    user root
+    group root system
+    disabled
+    writepid /dev/cpuset/system-background/tasks
+
+# QCOM prop
 service qmuxd /system/vendor/bin/qmuxd
     class main
     user radio
