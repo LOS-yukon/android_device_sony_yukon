@@ -223,3 +223,5 @@ PRODUCT_PACKAGES += \
     InCallUI \
     Stk
 
+# Include QCOM proprietary
+$(call inherit-product-if-exists, vendor/qcom/proprietary/proprietary.mk)
