@@ -289,6 +289,13 @@ service mpdecision /system/bin/mpdecision --avg_comp
     writepid /dev/cpuset/system-background/tasks
 
 # QCOM prop
+service thermal-engine /system/vendor/bin/thermal-engine
+    class main
+    user root
+    group root
+    writepid /dev/cpuset/system-background/tasks
+
+# QCOM prop
 service qmuxd /system/vendor/bin/qmuxd
     class main
     user radio
@@ -326,13 +333,6 @@ service sensors /system/vendor/bin/sensors.qcom
 # QCOM Secure
 service qseecomd /system/vendor/bin/qseecomd
     class core
-    user root
-    group root
-    writepid /dev/cpuset/system-background/tasks
-
-# OSS thermal management
-service thermanager /system/bin/thermanager /system/etc/thermanager.xml
-    class main
     user root
     group root
     writepid /dev/cpuset/system-background/tasks
