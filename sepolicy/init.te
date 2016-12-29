@@ -1,0 +1,2 @@
+allow init debugfs:file w_file_perms;
+allow init wcnss_device:chr_file w_file_perms;
