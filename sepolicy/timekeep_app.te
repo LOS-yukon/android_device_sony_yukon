@@ -1,0 +1,17 @@
+type timekeep_app, domain, domain_deprecated;
+
+app_domain(timekeep_app)
+
+allow timekeep_app timekeep_data_file:file create_file_perms;
+allow timekeep_app timekeep_data_file:dir create_dir_perms;
+
+set_prop(timekeep_app, timekeep_prop)
+
+r_dir_file(timekeep_app, sysfs_timekeep)
+
+allow timekeep_app proc_net:file r_file_perms;
+
+allow timekeep_app activity_service:service_manager find;
+allow timekeep_app connectivity_service:service_manager find;
+allow timekeep_app display_service:service_manager find;
+allow timekeep_app network_management_service:service_manager find;

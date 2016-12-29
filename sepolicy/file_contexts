@@ -25,6 +25,7 @@
 # System files
 #
 /system/bin/macaddrsetup                        u:object_r:addrsetup_exec:s0
+/system/bin/timekeep                            u:object_r:timekeep_exec:s0
 /system/vendor/bin/irsc_util                    u:object_r:irsc_util_exec:s0
 /system/vendor/bin/mlog_qmi_service             u:object_r:mlog_qmi_exec:s0
 /system/vendor/bin/mpdecision                   u:object_r:mpdecision_exec:s0
@@ -43,7 +44,11 @@
 ###################################
 # sysfs files
 #
-/sys/devices/soc/fb000000\.qcom,wcnss-wlan/wcnss_mac_addr                                u:object_r:sysfs_addrsetup:s0
+# Timekeep
+/sys/devices/00-qcom,pm8226_rtc/rtc/rtc0/since_epoch                 u:object_r:sysfs_timekeep:s0
+
+# WiFi MAC address
+/sys/devices/fb000000\.qcom,wcnss-wlan/wcnss_mac_addr                u:object_r:sysfs_addrsetup:s0
 
 ###################################
 # proc files
