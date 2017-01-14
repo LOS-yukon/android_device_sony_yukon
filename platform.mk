@@ -178,7 +178,7 @@ PRODUCT_PACKAGES += \
 
 # Snap
 PRODUCT_PACKAGES += \
-    SnapdragonCamera
+    Snap
 
 # OSS
 PRODUCT_PACKAGES += \
