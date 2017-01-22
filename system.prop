@@ -5,9 +5,6 @@ dalvik.vm.image-dex2oat-threads=4
 # Platform specific default properties
 persist.data.qmi.adb_logmask=0
 
-# Default to LTE/GSM/WCDMA.
-ro.telephony.default_network=9
-
 # System props for the data modules
 ro.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true

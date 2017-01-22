@@ -16,6 +16,11 @@ SOMC_PLATFORM := yukon
 
 SONY_ROOT:= device/sony/yukon/rootdir
 
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
+    ro.product.model \
+    ro.product.name \
+    ro.build.product
+
 # Common init
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/init.common.rc:root/init.common.rc \
