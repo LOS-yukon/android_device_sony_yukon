@@ -103,6 +103,7 @@ void vendor_load_properties()
             property_set("ro.product.device", "D2302");
             property_set("ro.build.product", "D2302");
             property_set("ro.telephony.default_network", "0,1");
+            property_set("ro.telephony.ril.config", "simactivation");
             property_set("persist.radio.multisim.config", "dsds");
             property_set("persist.radio.dont_use_dsd", "true");
             property_set("persist.radio.plmn_name_cmp", "1");

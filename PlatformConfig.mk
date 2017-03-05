@@ -34,11 +34,9 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 TARGET_KERNEL_SOURCE := kernel/sony/msm8226
 
 BOARD_KERNEL_CMDLINE += console=ttyHSL0,115200,n8
-BOARD_KERNEL_CMDLINE += vmalloc=300M
 BOARD_KERNEL_CMDLINE += user_debug=31 androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x3F ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y
-BOARD_KERNEL_CMDLINE += coherent_pool=8M
 BOARD_KERNEL_CMDLINE += sched_enable_power_aware=1
 
 BOARD_KERNEL_BOOTIMG := true

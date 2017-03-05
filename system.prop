@@ -68,7 +68,10 @@ ro.bt.bdaddr_path=/data/misc/bluetooth/bluetooth_bdaddr
 ro.nfc.port=I2C
 
 # Camera
-persist.camera.HAL3.enabled=1
+media.stagefright.legacyencoder=true
+media.stagefright.codecremote=false
+camera2.portability.force_api=1
+persist.camera.HAL3.enabled=0
 persist.camera.gyro.disable=1
 persist.camera.feature.cac=0
 persist.camera.ois.disable=0
@@ -88,6 +91,7 @@ ro.qualcomm.bt.hci_transport=smd
 qcom.bluetooth.soc=smd
 
 # RILD
+rild.libargs=-d /dev/smd0
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ril.subscription.types=NV,RUIM
 
