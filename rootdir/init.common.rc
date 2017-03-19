@@ -128,6 +128,9 @@ on early-boot
     # Set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
 
+   # WCNSS enable
+   write /dev/wcnss_wlan ""
+
 on boot
     # Bluetooth modules
     chown system system /sys/module/bluetooth/parameters/disable_ertm
