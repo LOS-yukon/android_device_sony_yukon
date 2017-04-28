@@ -25,7 +25,7 @@ failed ()
 
 POWER_CLASS=`getprop qcom.bt.dev_power_class`
 TRANSPORT=`getprop ro.qualcomm.bt.hci_transport`
-BDADDR=`getprop persist.service.bdroid.bdaddr`
+BDADDR=""
 
 #find the transport type
 logi "Transport : $TRANSPORT"
