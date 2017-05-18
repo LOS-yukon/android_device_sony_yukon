@@ -65,6 +65,24 @@ char const*const GREEN_BLINK_FILE
 
 char const*const BLUE_BLINK_FILE
 		= "/sys/class/leds/led:rgb_blue/blink";
+		
+char const*const RED_ILLUMINATION_FILE
+		= "/sys/class/illumination/7";
+
+char const*const GREEN_ILLUMINATION_FILE
+		= "/sys/class/illumination/8";
+
+char const*const BLUE_ILLUMINATION_FILE
+		= "/sys/class/illumination/6";
+
+char const*const ILLUMINATION_BLINK_ON_FILE
+		= "/sys/class/illumination/2";		
+
+char const*const ILLUMINATION_BLINK_OFF_FILE
+		= "/sys/class/illumination/1";		
+		
+char const*const ILLUMINATION_FILE
+		= "/sys/class/illumination/4";
 
 char const*const DISPLAY_FB_DEV_PATH
 		= "/dev/graphics/fb0";
@@ -234,6 +252,22 @@ set_speaker_light_locked(struct light_device_t* dev,
 		write_int(GREEN_LED_FILE, green);
 		write_int(BLUE_LED_FILE, blue);
 	}
+	
+		write_int(RED_ILLUMINATION_FILE, red);
+		write_int(GREEN_ILLUMINATION_FILE, green);
+		write_int(BLUE_ILLUMINATION_FILE, blue);
+		
+		if (red || green || blue) {
+			if (blink) {
+				write_int(ILLUMINATION_BLINK_ON_FILE, 50);
+				write_int(ILLUMINATION_BLINK_OFF_FILE, 20);
+				write_int(ILLUMINATION_FILE, 255);
+			} else {
+				write_int(ILLUMINATION_FILE, 21); // no idea why 21, it works
+			}
+		} else {
+			write_int(ILLUMINATION_FILE, 0);
+		}
 
 	return 0;
 }
