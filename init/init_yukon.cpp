@@ -86,6 +86,8 @@ void vendor_load_properties()
             property_set("ro.product.model", "Xperia M2 Aqua");
             property_set("ro.product.device", "D2403");
             property_set("ro.build.product", "D2403");
+            property_set("ro.build.description", "D2403-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
+            property_set("ro.build.fingerprint", "Sony/D2403/D2403:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
