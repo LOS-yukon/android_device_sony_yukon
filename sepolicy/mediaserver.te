@@ -1,0 +1,6 @@
+# Text relocation
+allow mediaserver system_file:file execmod;
+
+#Legacy HAL1
+allow mediaserver audio_device:chr_file rw_file_perms;
+
