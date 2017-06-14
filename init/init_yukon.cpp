@@ -84,6 +84,7 @@ void vendor_load_properties()
         if (model == "2403") {
             /* D2403 (Xperia M2 Aqua) */
             property_set("ro.product.model", "Xperia M2 Aqua");
+            property_set("ro.product.name", "D2403");
             property_set("ro.product.device", "D2403");
             property_set("ro.build.product", "D2403");
             property_set("ro.build.description", "D2403-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
@@ -94,16 +95,22 @@ void vendor_load_properties()
         } else if (model == "2406") {
             /* D2406 (Xperia M2 Aqua USA) */
             property_set("ro.product.model", "Xperia M2 Aqua");
+            property_set("ro.product.name", "D2406");
             property_set("ro.product.device", "D2406");
             property_set("ro.build.product", "D2406");
+            property_set("ro.build.description", "D2406-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
+            property_set("ro.build.fingerprint", "Sony/D2406/D2406:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
         } else if (model == "2302") {
             /* D2302 (Xperia M2 Dual) */
             property_set("ro.product.model", "Xperia M2 Dual");
+            property_set("ro.product.name", "D2302");
             property_set("ro.product.device", "D2302");
             property_set("ro.build.product", "D2302");
+            property_set("ro.build.description", "D2302-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
+            property_set("ro.build.fingerprint", "Sony/D2302/D2302:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
             property_set("ro.telephony.default_network", "0,1");
             property_set("ro.telephony.ril.config", "simactivation");
             property_set("persist.radio.multisim.config", "dsds");
@@ -112,23 +119,32 @@ void vendor_load_properties()
         } else if (model == "2305") {
             /* D2305 (Xperia M2 3G) */
             property_set("ro.product.model", "Xperia M2 3G");
+            property_set("ro.product.name", "D2305");
             property_set("ro.product.device", "D2305");
             property_set("ro.build.product", "D2305");
+            property_set("ro.build.description", "D2305-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
+            property_set("ro.build.fingerprint", "Sony/D2305/D2305:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
             property_set("ro.telephony.default_network", "0");
             property_set("persist.radio.multisim.config", "");
         } else if (model == "2306") {
             /* D2306 (Xperia M2 LTE USA) */
             property_set("ro.product.model", "Xperia M2");
+            property_set("ro.product.name", "D2306");
             property_set("ro.product.device", "D2306");
             property_set("ro.build.product", "D2306");
+            property_set("ro.build.description", "D2306-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
+            property_set("ro.build.fingerprint", "Sony/D2306/D2306:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
         } else {
             /* D2303 (Xperia M2 LTE) */
             property_set("ro.product.model", "Xperia M2");
+            property_set("ro.product.name", "D2303");
             property_set("ro.product.device", "D2303");
             property_set("ro.build.product", "D2303");
+            property_set("ro.build.description", "D2303-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
+            property_set("ro.build.fingerprint", "Sony/D2303/D2303:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
@@ -137,6 +153,7 @@ void vendor_load_properties()
         if (model == "2203") {
             /* D2203 (Xperia E3 LTE) */
             property_set("ro.product.model", "Xperia E3");
+            property_set("ro.product.name", "D2203");
             property_set("ro.product.device", "D2203");
             property_set("ro.build.product", "D2203");
             property_set("ro.telephony.default_network", "9");
