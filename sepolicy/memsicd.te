@@ -2,9 +2,11 @@
 
 type memsicd, domain;
 type memsicd_exec, file_type, exec_type;
-type memsicd_tmpfs, file_type;
+
+init_daemon_domain(memsicd)
 
 allow memsicd input_device:dir create_dir_perms;
+
 allow memsicd diag_device:chr_file { read open ioctl getattr write lock append };
 allow memsicd init:process sigchld;
 allow memsicd input_device:chr_file { read open ioctl getattr write lock append };
