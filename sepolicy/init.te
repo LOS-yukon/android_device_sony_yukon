@@ -1,2 +1,12 @@
 allow init debugfs:file w_file_perms;
 allow init wcnss_device:chr_file w_file_perms;
+
+allow init memsicd:process { transition siginh noatsecure rlimitinh };
+allow init memsicd_exec:file { read getattr open execute };
+allow init memsicd_tmpfs:blk_file relabelto;
+allow init memsicd_tmpfs:chr_file relabelto;
+allow init memsicd_tmpfs:dir relabelto;
+allow init memsicd_tmpfs:fifo_file relabelto;
+allow init memsicd_tmpfs:file relabelto;
+allow init memsicd_tmpfs:lnk_file relabelto;
+allow init memsicd_tmpfs:sock_file relabelto;

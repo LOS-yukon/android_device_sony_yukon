@@ -1,10 +1,25 @@
 # create  new domain memsicd
 
 type memsicd, domain;
-type memsicd_exec, exec_type, file_type;
+type memsicd_exec, file_type, exec_type;
+type memsicd_tmpfs, file_type;
 
-init_daemon_domain(memsicd)
-
-allow memsicd memsic_device:chr_file create_file_perms;
 allow memsicd input_device:dir create_dir_perms;
-
+allow memsicd diag_device:chr_file { read open ioctl getattr write lock append };
+allow memsicd init:process sigchld;
+allow memsicd input_device:chr_file { read open ioctl getattr write lock append };
+allow memsicd input_device:dir { read ioctl search add_name remove_name getattr write open };
+allow memsicd input_device:file { read open ioctl getattr write lock append };
+allow memsicd memsicd:dir { read getattr search ioctl open };
+allow memsicd memsicd:fd use;
+allow memsicd memsicd:fifo_file { read open ioctl getattr write lock append };
+allow memsicd memsicd:file { read open ioctl getattr write lock append };
+allow memsicd memsicd:lnk_file { read getattr lock ioctl open };
+allow memsicd memsicd:process { getsched getsession getpgid sigkill setsched signal setrlimit fork getattr setpgid getcap sigstop sigchld setcap signull };
+allow memsicd memsicd:unix_dgram_socket { read create setattr ioctl shutdown sendto getattr setopt write lock bind connect getopt append };
+allow memsicd memsicd:unix_stream_socket { read create setattr ioctl shutdown connectto getattr setopt write lock listen accept bind connect getopt append };
+allow memsicd memsicd_exec:file { read getattr open entrypoint execute };
+allow memsicd memsicd_tmpfs:file { read write };
+allow memsicd sensors_data_file:dir { read create setattr ioctl search link reparent add_name unlink remove_name getattr write rmdir rename open };
+allow memsicd sensors_data_file:file { read create setattr open ioctl link unlink getattr write lock rename append };
+allow memsicd sysfs:file { read open ioctl getattr write lock append };
