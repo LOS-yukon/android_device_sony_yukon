@@ -134,3 +134,6 @@ ro.qti.sensors.wu=false
 
 # Performance
 ro.vendor.extension_library=/system/vendor/lib/libqti-perfd-client.so
+
+# Widevine
+DEVICE_PROVISIONED=1
