@@ -1,0 +1,13 @@
+type wifimactool, domain, domain_deprecated;
+type wifimactool_exec, exec_type, file_type;
+ 
+init_daemon_domain(wifimactool)
+
+unix_socket_connect(wifimactool, tad, tad)
+ 
+allow wifimactool shell_exec:file rx_file_perms;
+allow wifimactool toolbox_exec:file rx_file_perms;
+
+allow wifimactool sysfs_wifimactool:file rw_file_perms;
+
+allow wifimactool tad:unix_stream_socket connectto;
