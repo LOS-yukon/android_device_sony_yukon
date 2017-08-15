@@ -14,6 +14,7 @@
 
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug mode=755
+    chmod 666 /proc/cmdline
 
 on init
     # Enable subsystem restart
@@ -286,17 +287,15 @@ service ril-daemon2 /system/bin/rild -c 2
 
 # QCOM prop
 service mpdecision /system/vendor/bin/mpdecision --avg_comp
+    class late_start
     user root
     group root system
-    disabled
-    writepid /dev/cpuset/system-background/tasks
 
 # QCOM prop
-service thermal-engine /system/vendor/bin/thermal-engine
+service thermal-engine /system/vendor/bin/thermal-engine -c /etc/thermal-engine-8226.conf
     class main
     user root
     group root
-    writepid /dev/cpuset/system-background/tasks
 
 # QCOM prop
 service qmuxd /system/vendor/bin/qmuxd
