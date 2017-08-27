@@ -40,6 +40,10 @@ ro.hwui.text_large_cache_height=1024
 # DRM service
 drm.service.enabled=true
 
+# OMX properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.media.treble_omx=false
+
 # VIDC: debug_levels 1:ERROR 2:HIGH 4:LOW 0:NOLOGS 7:AllLOGS
 vidc.debug.level=1
 

@@ -123,6 +123,9 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/yukon/overlay
 # System Props
 TARGET_SYSTEM_PROP += device/sony/yukon/system.prop
 
+# Vendor Interface Manifest
+DEVICE_MANIFEST_FILE :=  device/sony/yukon/manifest.xml
+
  # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
 
