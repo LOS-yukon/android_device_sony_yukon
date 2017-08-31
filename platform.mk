@@ -246,8 +246,8 @@ PRODUCT_PACKAGES += \
 
 # OSS
 PRODUCT_PACKAGES += \
-#    timekeep \
-#   TimeKeep \
+    timekeep \
+    TimeKeep \
     macaddrsetup
 
 # QCOM OSS
