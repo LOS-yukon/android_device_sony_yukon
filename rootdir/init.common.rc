@@ -240,6 +240,8 @@ on boot
     setrlimit 4 -1 -1
     write /proc/sys/kernel/dmesg_restrict 0
 
+    # Wifi firmware reload path
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
 
 # SONY misc
 service tad_static /system/vendor/bin/tad_static /dev/block/bootdevice/by-name/TA 0,16
