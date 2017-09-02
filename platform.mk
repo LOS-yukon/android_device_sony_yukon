@@ -237,7 +237,7 @@ PRODUCT_PACKAGES += \
 # Camera HIDL interfaces
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    camera.device@3.2-impl
+    camera.device@1.0-impl
 
 # Snap
 PRODUCT_PACKAGES += \
