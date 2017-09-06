@@ -45,8 +45,8 @@ PRODUCT_COPY_FILES += \
 
 # Qualcom WiFi
 PRODUCT_COPY_FILES += \
-    $(SONY_ROOT)/system/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    $(SONY_ROOT)/system/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
+    $(SONY_ROOT)/system/vendor/etc/wifi/wpa_supplicant_overlay.conf:system/vendor/etc/wifi/wpa_supplicant_overlay.conf \
+    $(SONY_ROOT)/system/vendor/etc/wifi/p2p_supplicant_overlay.conf:system/vendor/etc/wifi/p2p_supplicant_overlay.conf
 
 # Qualcom BT
 PRODUCT_COPY_FILES += \
