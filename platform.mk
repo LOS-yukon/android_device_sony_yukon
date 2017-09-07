@@ -198,16 +198,16 @@ PRODUCT_PACKAGES += \
     libOmxVenc
 
 # GPS
-#PRODUCT_PACKAGES += \
-#    gps.msm8226 \
-#    libloc_api_v02 \
-#    libloc_core \
-#    libloc_eng \
-#    libgps.utils
+PRODUCT_PACKAGES += \
+    gps.msm8226 \
+    libloc_api_v02 \
+    libloc_core \
+    libloc_eng \
+    libgps.utils
 
 # GPS HIDL interfaces
-#PRODUCT_PACKAGES += \
-#    android.hardware.gnss@1.0-impl
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
 
 # WLAN
 PRODUCT_PACKAGES += \
