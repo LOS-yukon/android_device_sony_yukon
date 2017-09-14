@@ -91,9 +91,6 @@ debug.qualcomm.sns.daemon=0
 debug.qualcomm.sns.hal=0
 debug.qualcomm.sns.libsensor1=0
 
-# sdcardFS
-ro.sys.sdcardfs=true
-
 # Bluetooth
 ro.qualcomm.bt.hci_transport=smd
 qcom.bluetooth.soc=smd
