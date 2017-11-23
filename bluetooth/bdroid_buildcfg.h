@@ -17,6 +17,4 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTA_HOST_INTERLEAVE_SEARCH  TRUE
-
 #endif
