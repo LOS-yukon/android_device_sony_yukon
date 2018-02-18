@@ -38,12 +38,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
-#include "util.h"
-
 #include <android-base/properties.h>
+#include <android-base/logging.h>
 
 using android::base::GetProperty;
+using android::init::property_set;
 
 using namespace std;
 
