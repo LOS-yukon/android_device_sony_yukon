@@ -128,8 +128,9 @@ TARGET_SYSTEM_PROP += device/sony/yukon/system.prop
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE :=  device/sony/yukon/manifest.xml
 
- # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/legacy-sepolicy.mk
 
 #BOARD_SEPOLICY_DIRS += device/sony/yukon/sepolicy
 
