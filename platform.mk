@@ -285,5 +285,8 @@ PRODUCT_PACKAGES += \
     InCallUI \
     Stk
 
+# Inherit common Android Go configurations
+$(call inherit-product, build/target/product/go_defaults.mk)
+
 # Include QCOM proprietary
 $(call inherit-product-if-exists, vendor/qcom/proprietary/proprietary.mk)
