@@ -16,6 +16,11 @@ SOMC_PLATFORM := yukon
 
 SONY_ROOT:= device/sony/yukon/rootdir
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    device/sony/yukon/overlay \
+    device/sony/yukon/overlay-lineage
+
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.model \
     ro.product.name \
