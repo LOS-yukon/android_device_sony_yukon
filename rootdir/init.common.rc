@@ -171,6 +171,7 @@ on boot
 
     # Create folder for timekeep
     mkdir /data/time/ 0700 system system
+    chmod 0770 /data/time/ats_2
 
     # Camera Recording
     mkdir /dev/video
@@ -343,10 +344,10 @@ service charger /charger
     writepid /dev/cpuset/system-background/tasks
 
 # OSS time
-service timekeep /system/bin/timekeep restore
+service timekeep /vendor/bin/timekeep restore
     class late_start
     user root
-    group root
+    group root system
     oneshot
     writepid /dev/cpuset/system-background/tasks
 
