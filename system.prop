@@ -78,7 +78,6 @@ ro.nfc.port=I2C
 camera.disable_treble=true
 media.stagefright.codecremote=false
 camera2.portability.force_api=1
-debug.camcorder.disablemeta=true
 persist.camera.HAL3.enabled=0
 persist.camera.gyro.disable=1
 persist.camera.feature.cac=0
