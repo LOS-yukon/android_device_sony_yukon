@@ -139,3 +139,6 @@ ro.vendor.extension_library=/system/vendor/lib/libqti-perfd-client.so
 
 # Widevine
 DEVICE_PROVISIONED=1
+
+# EGL blobs crash on screen off
+ro.egl.destroy_after_detach=true
