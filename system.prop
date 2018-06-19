@@ -61,8 +61,9 @@ persist.debug.wfd.enable=1
 # Property to choose between virtual/external wfd display
 persist.sys.wfd.virtual=0
 
-# Wi-Fi interface name
+# Wi-Fi
 wifi.interface=wlan0
+wifi.supplicant_scan_interval=180
 
 # BT address
 ro.bt.bdaddr_path=/data/misc/bluetooth/bluetooth_bdaddr
