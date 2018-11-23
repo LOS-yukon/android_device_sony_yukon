@@ -358,8 +358,6 @@ service timekeep /vendor/bin/timekeep restore
 
 on property:sys.boot_completed=1
 
-    setprop sys.io.scheduler "bfq"
-
     # Initialize default minfree LMK levels (in MB's: 4,12,24,48,60,160)
     write /sys/module/lowmemorykiller/parameters/minfree 1024,3072,6144,12288,15360,40960
  
