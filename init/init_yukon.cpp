@@ -201,7 +201,7 @@ void vendor_load_properties()
             property_set("ro.build.fingerprint", "Sony/D5316/D5316:5.1.1/19.4.A.0.182/2188515266:user/release-keys");
         } else if (model == "5322") {
             /* D5322 (Xperia T2 ultra) */
-            property_set("ro.product.model", "Xperia T2 ultra);
+            property_set("ro.product.model", "Xperia T2 ultra");
             property_set("ro.product.name", "D5322");
             property_set("ro.product.device", "D5322");
             property_set("ro.build.product", "D5322");
