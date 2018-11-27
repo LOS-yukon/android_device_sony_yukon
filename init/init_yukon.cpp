@@ -173,6 +173,79 @@ void vendor_load_properties()
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
         }
+
+    } else if (hardware == "tianchi") {
+        if (model == "5303") {
+            /* D5303 (Xperia T2 ultra) */
+            property_set("ro.product.model", "Xperia T2 ultra");
+            property_set("ro.product.name", "D5303");
+            property_set("ro.product.device", "D5303");
+            property_set("ro.build.product", "D5303");
+            property_set("ro.build.description", "D5303-user 5.1.1 19.4.A.C.0.182 2188515266 release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5303/D5303:5.1.1/19.4.A.0.182/2188515266:user/release-keys");
+        } else if (model == "5306") {
+            /* D5306 (Xperia T2 ultra) */
+            property_set("ro.product.model", "Xperia T2 ultra");
+            property_set("ro.product.name", "D5306");
+            property_set("ro.product.device", "D5306");
+            property_set("ro.build.product", "D5306");
+            property_set("ro.build.description", "D5306-user 5.1.1 19.4.A.C.0.182 2188515266 release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5306/D5306:5.1.1/19.4.A.0.182/2188515266:user/release-keys");
+        } else if (model == "5316") {
+            /* D5316 (Xperia T2 ultra) */
+            property_set("ro.product.model", "Xperia T2 ultra");
+            property_set("ro.product.name", "D5316");
+            property_set("ro.product.device", "D5316");
+            property_set("ro.build.product", "D5316");
+            property_set("ro.build.description", "D5316-user 5.1.1 19.4.A.C.0.182 2188515266 release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5316/D5316:5.1.1/19.4.A.0.182/2188515266:user/release-keys");
+        } else if (model == "5322") {
+            /* D5322 (Xperia T2 ultra) */
+            property_set("ro.product.model", "Xperia T2 ultra);
+            property_set("ro.product.name", "D5322");
+            property_set("ro.product.device", "D5322");
+            property_set("ro.build.product", "D5322");
+            property_set("ro.build.description", "D5322-user 5.1.1 19.4.A.C.0.182 2188515266 release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5322/D5322:5.1.1/19.4.A.0.182/2188515266:user/release-keys");
+        } else {
+            /* Recovery */
+            property_set("ro.product.model", "Xperia T2 ultra");
+            property_set("ro.product.device", "tianchi");
+            property_set("ro.build.product", "tianchi");
+        }
+
+    } else if (hardware == "seagull") {
+        if (model == "5102") {
+            /* D5102 (Xperia T3) */
+            property_set("ro.product.model", "Xperia T3");
+            property_set("ro.product.name", "D5102");
+            property_set("ro.product.device", "D5102");
+            property_set("ro.build.product", "D5102");
+            property_set("ro.build.description", "D5102-user 4.4.2 18.1.A.1.21 6vt_bw release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5102/D5102:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
+        } else if (model == "5106") {
+            /* D5106 (Xperia T3) */
+            property_set("ro.product.model", "Xperia T3");
+            property_set("ro.product.name", "D5106");
+            property_set("ro.product.device", "D5106");
+            property_set("ro.build.product", "D5106");
+            property_set("ro.build.description", "D5106-user 4.4.2 18.1.A.1.21 6vt_bw release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5106/D5106:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
+        } else if (model == "5103") {
+            /* D5103 (Xperia T3) */
+            property_set("ro.product.model", "Xperia T3");
+            property_set("ro.product.name", "D5103");
+            property_set("ro.product.device", "D5103");
+            property_set("ro.build.product", "D5103");
+            property_set("ro.build.description", "D5103-user 4.4.2 18.1.A.1.21 6vt_bw release-keys");
+            property_set("ro.build.fingerprint", "Sony/D5103/D5103:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
+        } else {
+            /* Recovery */
+            property_set("ro.product.model", "Xperia T3");
+            property_set("ro.product.device", "seagull");
+            property_set("ro.build.product", "seagull");
+        }
+
     } else if (hardware == "flamingo") {
         if (model == "2202") {
             /* D2202 (Xperia E3 3G) */
