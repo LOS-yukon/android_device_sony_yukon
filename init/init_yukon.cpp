@@ -222,7 +222,7 @@ void vendor_load_properties()
             property_override_dual("ro.product.device", "ro.vendor.product.device", "D5102");
             property_override_dual("ro.build.product", "ro.vendor.build.product", "D5102");
             property_override_dual("ro.build.description", "ro.vendor.build.description", "D5102-user 4.4.2 18.1.A.1.21 6vt_bw release-keys");
-            pproperty_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5102/D5102:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
+            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5102/D5102:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
         } else if (model == "5106") {
             /* D5106 (Xperia T3) */
             property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T3");
