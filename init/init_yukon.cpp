@@ -209,9 +209,9 @@ void vendor_load_properties()
             property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5322/D5322:5.1.1/19.4.A.0.182/2188515266:user/release-keys");
         } else {
             /* Recovery */
-            property_set("ro.product.model", "Xperia T2 ultra");
-            property_set("ro.product.device", "tianchi");
-            property_set("ro.build.product", "tianchi");
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T2 Ultra");
+            property_override_dual("ro.product.device", "ro.vendor.product.device", "tianchi");
+            property_override_dual("ro.build.product", "ro.vendor.build.product", "tianchi");
         }
 
     } else if (hardware == "seagull") {
@@ -241,9 +241,9 @@ void vendor_load_properties()
             property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5103/D5103:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
         } else {
             /* Recovery */
-            property_set("ro.product.model", "Xperia T3");
-            property_set("ro.product.device", "seagull");
-            property_set("ro.build.product", "seagull");
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T3");
+            property_override_dual("ro.product.device", "ro.vendor.product.device", "seagull");
+            property_override_dual("ro.build.product", "ro.vendor.build.product", "seagull");
         }
 
     } else if (hardware == "flamingo") {
@@ -305,9 +305,9 @@ void vendor_load_properties()
             property_set("telephony.lteOnGsmDevice", "1");
         } else {
             /* Recovery */
-            property_set("ro.product.model", "Xperia E3");
-            property_set("ro.product.device", "flamingo");
-            property_set("ro.build.product", "flamingo");
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia E3");
+            property_override_dual("ro.product.device", "ro.vendor.product.device", "flamingo");
+            property_override_dual("ro.build.product", "ro.vendor.build.product", "flamingo");
         }
     }
     device = GetProperty("ro.product.device", "");
