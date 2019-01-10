@@ -105,29 +105,7 @@ void vendor_load_properties()
     model = get_model_number();
     
     if (hardware == "eagle") {
-        if (model == "2403") {
-            /* D2403 (Xperia M2 Aqua) */
-            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia M2 Aqua");
-            property_override_dual("ro.product.name", "ro.vendor.product.name", "D2403");
-            property_override_dual("ro.product.device", "ro.vendor.product.device", "D2403");
-            property_override_dual("ro.build.product","ro.vendor.build.product", "D2403");
-            property_override_dual("ro.build.description","ro.vendor.build.description", "D2403-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
-            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D2403/D2403:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
-            property_set("ro.telephony.default_network", "9");
-            property_set("persist.radio.multisim.config", "");
-            property_set("telephony.lteOnGsmDevice", "1");
-        } else if (model == "2406") {
-            /* D2406 (Xperia M2 Aqua USA) */
-            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia M2 Aqua");
-            property_override_dual("ro.product.name", "ro.vendor.product.name", "D2406");
-            property_override_dual("ro.product.device", "ro.vendor.product.device", "D2406");
-            property_override_dual("ro.build.product","ro.vendor.build.product", "D2406");
-            property_override_dual("ro.build.description","ro.vendor.build.description", "D2406-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
-            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D2406/D2406:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
-            property_set("ro.telephony.default_network", "9");
-            property_set("persist.radio.multisim.config", "");
-            property_set("telephony.lteOnGsmDevice", "1");
-        } else if (model == "2302") {
+        if (model == "2302") {
             /* D2302 (Xperia M2 Dual) */
             property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia M2 Dual");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "D2302");
@@ -140,6 +118,17 @@ void vendor_load_properties()
             property_set("persist.radio.multisim.config", "dsds");
             property_set("persist.radio.dont_use_dsd", "true");
             property_set("persist.radio.plmn_name_cmp", "1");
+        } else if (model == "2303") {
+            /* D2303 (Xperia M2 LTE) */
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia M2");
+            property_override_dual("ro.product.name", "ro.vendor.product.name", "D2303");
+            property_override_dual("ro.product.device", "ro.vendor.product.device", "D2303");
+            property_override_dual("ro.build.product","ro.vendor.build.product", "D2303");
+            property_override_dual("ro.build.description","ro.vendor.build.description", "D2303-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
+            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D2303/D2303:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
         } else if (model == "2305") {
             /* D2305 (Xperia M2 3G) */
             property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia M2 3G");
@@ -161,14 +150,25 @@ void vendor_load_properties()
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
+        } else if (model == "2403") {
+            /* D2403 (Xperia M2 Aqua) */
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia M2 Aqua");
+            property_override_dual("ro.product.name", "ro.vendor.product.name", "D2403");
+            property_override_dual("ro.product.device", "ro.vendor.product.device", "D2403");
+            property_override_dual("ro.build.product","ro.vendor.build.product", "D2403");
+            property_override_dual("ro.build.description","ro.vendor.build.description", "D2403-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
+            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D2403/D2403:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
         } else {
-            /* D2303 (Xperia M2 LTE) */
-            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia M2");
-            property_override_dual("ro.product.name", "ro.vendor.product.name", "D2303");
-            property_override_dual("ro.product.device", "ro.vendor.product.device", "D2303");
-            property_override_dual("ro.build.product","ro.vendor.build.product", "D2303");
-            property_override_dual("ro.build.description","ro.vendor.build.description", "D2303-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
-            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D2303/D2303:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
+            /* D2406 (Xperia M2 Aqua USA) */
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia M2 Aqua");
+            property_override_dual("ro.product.name", "ro.vendor.product.name", "D2406");
+            property_override_dual("ro.product.device", "ro.vendor.product.device", "D2406");
+            property_override_dual("ro.build.product","ro.vendor.build.product", "D2406");
+            property_override_dual("ro.build.description","ro.vendor.build.description", "D2406-user 5.1.1 18.6.A.0.182 1643041205 release-keys");
+            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D2406/D2406:5.1.1/18.6.A.0.182/1643041205:user/release-keys");
             property_set("ro.telephony.default_network", "9");
             property_set("persist.radio.multisim.config", "");
             property_set("telephony.lteOnGsmDevice", "1");
@@ -176,37 +176,51 @@ void vendor_load_properties()
 
     } else if (hardware == "tianchi") {
         if (model == "5303") {
-            /* D5303 (Xperia T2 ultra) */
-            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T2 ultra");
+            /* D5303 (Xperia T2 Ultra LTE) */
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T2 Ultra");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "D5303");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "D5303");
             property_override_dual("ro.build.product", "ro.vendor.build.product", "D5303");
             property_override_dual("ro.build.description", "ro.vendor.build.description", "D5303-user 5.1.1 19.4.A.C.0.182 2188515266 release-keys");
             property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5303/D5303:5.1.1/19.4.A.0.182/2188515266:user/release-keys");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
         } else if (model == "5306") {
-            /* D5306 (Xperia T2 ultra) */
-            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T2 ultra");
+            /* D5306 (Xperia T2 Ultra LTE) */
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T2 Ultra");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "D5306");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "D5306");
             property_override_dual("ro.build.product", "ro.vendor.build.product", "D5306");
             property_override_dual("ro.build.description", "ro.vendor.build.description", "D5306-user 5.1.1 19.4.A.C.0.182 2188515266 release-keys");
             property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5306/D5306:5.1.1/19.4.A.0.182/2188515266:user/release-keys");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
         } else if (model == "5316") {
-            /* D5316 (Xperia T2 ultra) */
-            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T2 ultra");
+            /* D5316 (Xperia T2 Ultra LTE) */
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T2 Ultra");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "D5316");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "D5316");
             property_override_dual("ro.build.product", "ro.vendor.build.product", "D5316");
             property_override_dual("ro.build.description", "ro.vendor.build.description", "D5316-user 5.1.1 19.4.A.C.0.182 2188515266 release-keys");
             property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5316/D5316:5.1.1/19.4.A.0.182/2188515266:user/release-keys");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
         } else if (model == "5322") {
-            /* D5322 (Xperia T2 ultra) */
-            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T2 ultra");
+            /* D5322 (Xperia T2 Ultra Dual) */
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T2 Ultra Dual");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "D5322");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "D5322");
             property_override_dual("ro.build.product", "ro.vendor.build.product", "D5322");
             property_override_dual("ro.build.description", "ro.vendor.build.description", "D5322-user 5.1.1 19.4.A.C.0.182 2188515266 release-keys");
             property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5322/D5322:5.1.1/19.4.A.0.182/2188515266:user/release-keys");
+            property_set("ro.telephony.default_network", "9");
+            property_set("ro.telephony.ril.config", "simactivation");
+            property_set("persist.radio.multisim.config", "dsds");
+            property_set("persist.radio.dont_use_dsd", "true");
+            property_set("persist.radio.plmn_name_cmp", "1");
         } else {
             /* Recovery */
             property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T2 Ultra");
@@ -216,29 +230,37 @@ void vendor_load_properties()
 
     } else if (hardware == "seagull") {
         if (model == "5102") {
-            /* D5102 (Xperia T3) */
-            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T3");
+            /* D5102 (Xperia T3 3G) */
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T3 3G");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "D5102");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "D5102");
             property_override_dual("ro.build.product", "ro.vendor.build.product", "D5102");
             property_override_dual("ro.build.description", "ro.vendor.build.description", "D5102-user 4.4.2 18.1.A.1.21 6vt_bw release-keys");
             property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5102/D5102:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
-        } else if (model == "5106") {
-            /* D5106 (Xperia T3) */
-            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T3");
-            property_override_dual("ro.product.name", "ro.vendor.product.name", "D5106");
-            property_override_dual("ro.product.device", "ro.vendor.product.device", "D5106");
-            property_override_dual("ro.build.product", "ro.vendor.build.product", "D5106");
-            property_override_dual("ro.build.description", "ro.vendor.build.description", "D5106-user 4.4.2 18.1.A.1.21 6vt_bw release-keys");
-            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5106/D5106:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
+            property_set("ro.telephony.default_network", "0");
+            property_set("persist.radio.multisim.config", "");
         } else if (model == "5103") {
-            /* D5103 (Xperia T3) */
+            /* D5103 (Xperia T3 LTE) */
             property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T3");
             property_override_dual("ro.product.name", "ro.vendor.product.name", "D5103");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "D5103");
             property_override_dual("ro.build.product", "ro.vendor.build.product", "D5103");
             property_override_dual("ro.build.description", "ro.vendor.build.description", "D5103-user 4.4.2 18.1.A.1.21 6vt_bw release-keys");
             property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5103/D5103:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
+        } else if (model == "5106") {
+            /* D5106 (Xperia T3 LTE) */
+            property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T3");
+            property_override_dual("ro.product.name", "ro.vendor.product.name", "D5106");
+            property_override_dual("ro.product.device", "ro.vendor.product.device", "D5106");
+            property_override_dual("ro.build.product", "ro.vendor.build.product", "D5106");
+            property_override_dual("ro.build.description", "ro.vendor.build.description", "D5106-user 4.4.2 18.1.A.1.21 6vt_bw release-keys");
+            property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Sony/D5106/D5106:4.4.2/18.1.A.1.21/6vt_bw:user/release-keys");
+            property_set("ro.telephony.default_network", "9");
+            property_set("persist.radio.multisim.config", "");
+            property_set("telephony.lteOnGsmDevice", "1");
         } else {
             /* Recovery */
             property_override_dual("ro.product.model", "ro.vendor.product.model", "Xperia T3");
