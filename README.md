@@ -1,14 +1,18 @@
-Copyright (C) Sony Mobile Communications 2014
-=============================================
+Sony Yukon common tree
+=============
 
-This is the Android device configuration for yukon platform.
+Sony Yukon family is composed by mid-range smartphones from Sony Mobile powered by Snapdragon 400.
 
-Yukon devices:
+They were announced on 2014.
 
-    Xperia E3..................Flamingo
-    Xperia M2..................Eagle
-    Xperia T2 Ultra         ...Tianchi
-    Xperia T3        ..........Seagull
+Yukon is now supported by LineageOS 16.0
 
-Build instructions
-http://developer.sonymobile.com/knowledge-base/open-source/open-devices/aosp-build-instructions/
+Basic   | Spec Sheet
+-------:|:--------------------------------------------------------------------------
+Devices | Sony Xperia E3 (flamingo), M2 (eagle), T2 Ultra (tianchi) and T3 (seagull)
+CPU     | 1.2GHz Quad-Core MSM8226
+GPU     | Adreno 305
+
+This branch is for building LineageOS 16.0 (or Android Oreo 9.0 AOSP based) ROMS.
+
+Build instructions: https://github.com/LOS-yukon/local_manifests/blob/lineage-16.0/README.md
